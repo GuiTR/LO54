@@ -1,1 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- couches applicatives -->
+<bean id="dao" class="jsf.dao.DaoJpa" />
+<bean id="metier" class="jsf.metier.service.Metier">
+<property name="dao" ref="dao"/>
