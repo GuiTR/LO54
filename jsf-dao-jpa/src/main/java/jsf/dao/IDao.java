@@ -15,7 +15,7 @@ public interface IDao {
 	
 	public Client CreateClient(Client client);
 	
-	public Session getSessionById(long id);
+	public Session getSessionById(Integer id);
 	
 	public void DeleteClient(Client client);
 }
