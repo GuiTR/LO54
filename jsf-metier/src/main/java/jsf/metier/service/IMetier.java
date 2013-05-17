@@ -4,7 +4,6 @@ import java.util.List;
 
 import jsf.jpa.Client;
 import jsf.jpa.Course;
-import jsf.jpa.Location;
 import jsf.jpa.Session;
 import jsf.metier.entites.SessionsCourse;
 
@@ -20,7 +19,7 @@ public interface IMetier {
 	public Client CreateClient(Client client);
 	
 	/* Fonction utilisé pour affecter un client à une session */
-	public Session getSessionById(long id);
+	public Session getSessionById(Integer id);
 	
 	/* Facultative à utiliser pour les tests de la couche metier */
 	public void DeleteClient(Client client);

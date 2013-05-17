@@ -38,7 +38,7 @@ public class Metier implements IMetier, Serializable {
 		return dao.CreateClient(client);
 	}
 
-	public Session getSessionById(long id) {
+	public Session getSessionById(Integer id) {
 		return dao.getSessionById(id);
 	}
 
